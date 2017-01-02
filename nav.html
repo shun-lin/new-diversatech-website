@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="../../css/materialize.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Import jQuery before materialize.js-->
+<script src="../../js/jquery-3.1.1.js"></script>
+<script src="../../js/materialize.js"></script>
+
+<div class="navbar-fixed">
+    <nav class="white">
+      <div class="nav-wrapper">
+          <a href="../../index.html" class="brand-logo valign-wrapper">
+              <img id="logo" class="responsive-img" width="170px" src="img/logo/DiversaTech.png"> </img>
+          </a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse grey-text text-darken-2"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="grey-text text-darken-2" href="index.html">About</a></li>
+            <li><a class="grey-text text-darken-2" href="companies.html">Companies</a></li>
+            <li><a class="grey-text text-darken-2" href="workshops.html">Workshops</a></li>
+            <li><a class="grey-text text-darken-2" href="contact.html">Contact</a></li>
+            <li><a class="waves-effect waves-light btn orange darken-1">Apply</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">About</a></li>
+            <li><a href="badges.html">Companies</a></li>
+            <li><a href="collapsible.html">Workshops</a></li>
+            <li><a href="mobile.html">Apply</a></li>
+          </ul>
+      </div>
+    </nav>
+</div>
+
+<script>
+  $( document ).ready(function(){
+    $(".dropdown-button").dropdown({ hover: true, belowOrigin: true});
+    $('.button-collapse').sideNav({
+      edge: 'left',
+      closeOnClick: true,
+      draggable: true
+    });
+    $('.side-nav a').click(function() {
+      $('.button-collapse').sideNav('hide');
+    });
+    var dragTarget = document.getElementsByClassName('drag-target')[0];
+    var mc = new Hammer.Manager(dragTarget);
+    var Swipe = new Hammer.Swipe();
+    var Tap = new Hammer.Tap();
+    mc.add(Swipe);
+    mc.on("swipeleft", function(ev) {
+    	$("#sidenav-overlay").remove();
+    });
+  })
+</script>
