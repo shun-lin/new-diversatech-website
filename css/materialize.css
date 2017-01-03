@@ -5220,7 +5220,7 @@ button.btn-floating {
 
 .dropdown-content li > span > label {
   top: 1px;
-  left: 0;
+  left: 3px;
   height: 18px;
 }
 

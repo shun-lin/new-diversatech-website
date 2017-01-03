@@ -41,22 +41,41 @@
   <!--Import Google Icon Font-->
   <link rel="stylesheet" href="fonts.googleapis.com/icon?family=Material+Icons">
   <!--Import Google Font-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
 
   <!--Import materialize css-->
   <link rel="stylesheet" href="css/materialize.min.css">
+  <!--Import cover css-->
+  <link rel="stylesheet" href="css/cover.css">
 
 
 </head>
 <body>
-    <div id='nav-container' />
+    <!--navaigation bar-->
+    <div id='nav-container'></div>
+    <!--cover-->
+    <div id="particles-js" class="cover-wrapper">
+    	<div class="cover valign-wrapper">
+    		<div class="text-container valign center">
+    			<h1 class="white-text">Tech Consulting meets <span class="orange-text text-darken-1">Diversity</span></h1>
+    			<p class="white-text">DiversaTech is UC Berkeley's preimere tech consultancy. We are unique from other consulting organizations because we combine both engineering and business principles to create dynamic recommendations and strategies.</p>
+    		</div>
+    	</div>
+    	<div class="shade-overlay"></div>
+    </div>
+
+    <!--footer bar-->
+    <div id='footer-container'></div>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 <script type="text/javascript">
-$(document).ready(function() {
-    $('#nav-container').load('nav.html');
-});
+    $(document).ready(function() {
+        $('#nav-container').load('nav.html');
+    });
+    $(document).ready(function() {
+        $('#footer-container').load('footer.html');
+    });
 </script>
