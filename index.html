@@ -66,16 +66,23 @@
 
     <!--footer bar-->
     <div id='footer-container'></div>
-  <!--Import jQuery before materialize.js-->
-  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
 <script type="text/javascript">
+    // importing navbar
     $(document).ready(function() {
         $('#nav-container').load('nav.html');
     });
+    // importing footer
     $(document).ready(function() {
         $('#footer-container').load('footer.html');
+    });
+    // updating website message
+    $(document).ready(function(){
+        Materialize.toast('Alert: Incomplete website', 4000)
     });
 </script>
