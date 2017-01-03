@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="MB" prefix="og: http://ogp.me/ns#">
+<head>
+  <!--Import Google Icon Font-->
+  <link rel="stylesheet" href="fonts.googleapis.com/icon?family=Material+Icons">
+  <!--Import Google Font-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+  <!--Import materialize css-->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <!--Import cover css-->
+  <link rel="stylesheet" href="css/cover.css">
+</head>
+
+<body>
+    <!--navaigation bar-->
+    <div id='nav-container'></div>
+    <!--main content-->
+
+    <!--footer bar-->
+    <div id='footer-container'></div>
+</body>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+
+<script type="text/javascript">
+    // importing navbar
+    $(document).ready(function() {
+        $('#nav-container').load('nav.html');
+    });
+    // importing footer
+    $(document).ready(function() {
+        $('#footer-container').load('footer.html');
+    });
+    // updating website message
+    $(document).ready(function(){
+        Materialize.toast('Alert: Incomplete website', 4000)
+    });
+</script>
