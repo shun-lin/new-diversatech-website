@@ -10,14 +10,145 @@
   <link rel="stylesheet" href="css/materialize.min.css">
   <!--Import cover css-->
   <link rel="stylesheet" href="css/cover.css">
-  <!--Import parallax css-->
-  <link rel="stylesheet" href="css/parallax.css">
+  <!--Import overview.css-->
+  <link rel="stylesheet" href="css/overview.css">
 </head>
 
 <body>
     <!--navaigation bar-->
     <div id='nav-container'></div>
     <!--main content-->
+    <!--Client header-->
+    <a id="clients" class="anchor"></a>
+    <div class="parallax-container">
+      <div class="parallax">
+        <div class="title-cover valign-wrapper">
+          <div class="text-container valign center">
+            <h3 class="white-text">Clients</h3>
+            <p class="white-text">Our clients are our first priority!</p>
+          </div>
+        </div>
+        <img style="width:100%;" src="img/companies/client_background.jpg">
+      </div>
+    </div>
+    <!--Clients contents-->
+    <section id="clients-conents" class="overview">
+        <div class="container">
+          <!--Spring 2017 Clients-->
+          <div class="row">
+              <div class="tagline">
+                  <div class="row center">
+                  <h1 class="uppercase">Confirmed Spring 2017 Clients</h1>
+                  </div>
+              </div>
+              <!--ebay-->
+              <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <a href="http://symantec.com">
+                            <img style="height:130px;" src="img/companies/fall_2016/symantec.png"></img>
+                        </a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        <!--Fall 2016 Clients-->
+        <div class="row">
+            <div class="tagline">
+                <div class="row center">
+                <h1 class="uppercase">Fall 2016 Clients</h1>
+                </div>
+            </div>
+            <!--ebay-->
+            <div class="col s12 m4">
+              <div class="card hoverable">
+                  <div class="card-image">
+                      <a href="http://ebay.com">
+                          <img style="height:130px;" src="img/companies/fall_2016/ebay.png"></img>
+                      </a>
+                  </div>
+              </div>
+            </div>
+            <!--autodesk-->
+            <div class="col s12 m4">
+              <div class="card hoverable">
+                  <div class="card-image">
+                      <a href="http://www.autodesk.com">
+                          <img style="height:130px;" src="img/companies/fall_2016/autodesk.svg"></img>
+                      </a>
+                  </div>
+              </div>
+            </div>
+            <!--kiwi-->
+            <div class="col s12 m4">
+              <div class="card hoverable">
+                  <div class="card-image">
+                      <a href="http://www.kiwicampus.com/en/">
+                          <img style="height:130px;" src="img/companies/fall_2016/kiwi.png"></img>
+                      </a>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Sponsors header-->
+    <a id="sponsors" class="anchor"></a>
+    <div class="parallax-container">
+      <div class="parallax">
+        <div class="title-cover valign-wrapper">
+          <div class="text-container valign center">
+            <h3 class="white-text">Sponsors</h3>
+            <p class="white-text">We are grateful for the following sponsors!</p>
+          </div>
+        </div>
+        <img style="width:100%;" src="img/companies/sponsors_background.jpeg">
+      </div>
+    </div>
+    <!--sponsor contents-->
+    <section id="sponsors-conents" class="overview">
+        <div class="container">
+          <!--sponsors-->
+          <div class="row">
+              <!--Sutardja Center-->
+              <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <a href="http://scet.berkeley.edu/">
+                            <img style="height:130px;" src="img/companies/sponsors/sutardja_center.jpg"></img>
+                        </a>
+                    </div>
+                </div>
+              </div>
+              <!--ASUC-->
+              <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <a href="http://scet.berkeley.edu/">
+                            <img style="height:130px;" src="img/companies/sponsors/asuc.png"></img>
+                        </a>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </section>
+
+    <!--Resources header-->
+    <a id="resources" class="anchor"></a>
+    <div class="parallax-container">
+      <div class="parallax">
+        <div class="title-cover valign-wrapper">
+          <div class="text-container valign center">
+            <h3 class="white-text">Resources</h3>
+            <p class="white-text">Resources for companies who want to work with us</p>
+          </div>
+        </div>
+        <img style="width:100%;" src="img/companies/resources/resources_background.jpeg">
+      </div>
+    </div>
+    <!--Resources contents-->
 
     <!--footer bar-->
     <div id='footer-container'></div>
@@ -25,19 +156,7 @@
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!--Import Materialize.js-->
 <script type="text/javascript" src="js/materialize.min.js"></script>
-
-<script type="text/javascript">
-    // importing navbar
-    $(document).ready(function() {
-        $('#nav-container').load('nav.html');
-    });
-    // importing footer
-    $(document).ready(function() {
-        $('#footer-container').load('footer.html');
-    });
-    // updating website message
-    $(document).ready(function(){
-        Materialize.toast('Alert: Incomplete website', 4000)
-    });
-</script>
+<!--Import custom.js-->
+<script type="text/javascript" src="js/custom.js"></script>
