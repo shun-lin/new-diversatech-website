@@ -6,5 +6,5 @@ $(document).ready(function() {
     // parallax
     $('.parallax').parallax();
     // updating website message
-    Materialize.toast('Alert: Incomplete website', 2000);
+    Materialize.toast('Contents Update Soon!', 2000);
 });
