@@ -7,9 +7,9 @@
 <div class="navbar-fixed">
 
     <ul id="about-dropdown" class="dropdown-content">
-      <li><a href="index.html">Overview</a></li>
-      <li><a href="index.html">Traditions</a></li>
+      <li><a href="index.html#overview">Overview</a></li>
       <li><a href="index.html#leadership">Leadership</a></li>
+      <li><a href="index.html#faculties">Faculties</a></li>
     </ul>
 
     <ul id="companies-dropdown" class="dropdown-content">
@@ -20,7 +20,7 @@
     </ul>
 
     <ul id="events-dropdown" class="dropdown-content">
-      <li><a href="events.html">Recruiting</a></li>
+      <li><a href="events.html#recruitment">Recruiting</a></li>
       <li><a href="events.html">Workshops</a></li>
     </ul>
 
@@ -49,24 +49,5 @@
     </nav>
 </div>
 
-<script>
-  $( document ).ready(function(){
-    $(".dropdown-button").dropdown({ hover: true, belowOrigin: true});
-    $('.button-collapse').sideNav({
-      edge: 'left',
-      closeOnClick: true,
-      draggable: true
-    });
-    $('.side-nav a').click(function() {
-      $('.button-collapse').sideNav('hide');
-    });
-    var dragTarget = document.getElementsByClassName('drag-target')[0];
-    var mc = new Hammer.Manager(dragTarget);
-    var Swipe = new Hammer.Swipe();
-    var Tap = new Hammer.Tap();
-    mc.add(Swipe);
-    mc.on("swipeleft", function(ev) {
-    	$("#sidenav-overlay").remove();
-    });
-  })
-</script>
+<!--Import nav.js-->
+<script type="text/javascript" src="js/nav.js"></script>

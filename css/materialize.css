@@ -2762,7 +2762,6 @@ video.responsive-video {
   z-index: -1;
 }
 
-
 .parallax img {
   display: none;
   position: absolute;
@@ -4028,14 +4027,6 @@ nav a {
   color: #fff;
 }
 
-# new added
-nav ul a {
-    font-family: Roboto, sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    color: #263238;
-}
-
 nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
 nav i.material-icons {
@@ -4048,10 +4039,6 @@ nav i.material-icons {
 nav .nav-wrapper {
   position: relative;
   height: 100%;
-}
-
-nav .nav-wrapper .brand-logo img {
-    height: 64px;
 }
 
 @media only screen and (min-width: 993px) {
@@ -5221,7 +5208,7 @@ button.btn-floating {
 
 .dropdown-content li > span > label {
   top: 1px;
-  left: 3px;
+  left: 0;
   height: 18px;
 }
 
